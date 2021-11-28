@@ -1,0 +1,117 @@
+body {
+  background-color: #01b4e4 ;
+  color: #fff;
+  
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.root{
+  display: flex;
+  flex-direction: column;  
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.movie{
+  background-color: #0d253f;
+  border-radius: 3px;
+  box-shadow: 3px 3px 5px rgba(0,0,0,1);
+  overflow: hidden;
+  position: relative;
+  margin:1rem;
+  width: 300px;
+}
+.movie img{
+  object-fit: cover;
+  height:400px;
+  width: 100%;
+}
+.movie-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.movie-info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.movie-info h3{
+  margin:0;
+  color:aliceblue;
+}
+.movie-over{
+  background-color: #90cea1 ;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  box-shadow: 0 -3px 5px rgb(107, 105, 105) 105);
+  color:midnightblue;
+  padding: 1rem;
+  position:absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+  max-height: 100%;
+  transform: translateY(102%);
+  transition: transform 0.3s ease-in-out;
+}
+.movie:hover .movie-over{
+  transform: translateY(0%);
+}
+
+.header{
+  background-color: #0d253f;
+  display: flex;
+  padding: 1rem;
+  justify-content: flex-end;
+}
+.pesquisa{
+  background-color: transparent;
+border: 2px solid #0d253f ;
+border-radius: 50px;
+color: #0d253f;
+font-family: inherit;
+font-size: 1.2rm;
+padding: 0.5rem 1.5rem;
+}
+.pesquisa:focus{
+  outline:0;
+}
+.tag{
+  background-color: #01b4e4;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 0.5rem;
+
+}
+.tag.green{
+color:green;
+}
+.tag.orange{
+color: orange;
+}
+.tag.red{
+color: red;
+}
+.btn{
+  background-color: #90cea1;
+  color: #0d253f;
+  border-radius: 1px;
+  box-shadow: 3px 3px 5px rgba(0,0,0,1);
+  overflow: hidden;
+  position: relative;
+  margin:1rem;
+  width: 300px;
+}
+.btn:hover .movie-over{
+  transform: translateY(0%);
+}
+
