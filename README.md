@@ -1,4 +1,4 @@
-hello, before running the program you need to install Node.js, basically you should go by web site https://nodejs.org/en/, download to LTS version and install in the process Next>Next>Finish, then download the code and do the following command inside your CLI
+hello, before running the program you need to install Node.js, basically you should go by web site https://nodejs.org/en/, download to LTS version and install in the process Next>Next>Finish, then download the code and do the following command inside your CLI to OS System.
 
 ### `npm start`
 
